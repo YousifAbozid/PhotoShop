@@ -5,8 +5,8 @@ import Slider from './Slider'
 
 const DEFAULT_OPTIONS = [
   {
-    name: "Brightness",
-    property: "brightness",
+    name: 'Brightness',
+    property: 'brightness',
     value: 100,
     range: {
       min: 0,
@@ -15,8 +15,8 @@ const DEFAULT_OPTIONS = [
     unit: '%'
   },
   {
-    name: "Contrast",
-    property: "contrast",
+    name: 'Contrast',
+    property: 'contrast',
     value: 100,
     range: {
       min: 0,
@@ -25,8 +25,8 @@ const DEFAULT_OPTIONS = [
     unit: '%'
   },
   {
-    name: "Saturation",
-    property: "saturation",
+    name: 'Saturation',
+    property: 'saturate',
     value: 100,
     range: {
       min: 0,
@@ -35,8 +35,8 @@ const DEFAULT_OPTIONS = [
     unit: '%'
   },
   {
-    name: "Grayscale",
-    property: "grayscale",
+    name: 'Grayscale',
+    property: 'grayscale',
     value: 0,
     range: {
       min: 0,
@@ -45,8 +45,8 @@ const DEFAULT_OPTIONS = [
     unit: '%'
   },
   {
-    name: "Sepia",
-    property: "sepia",
+    name: 'Sepia',
+    property: 'sepia',
     value: 0,
     range: {
       min: 0,
@@ -55,8 +55,8 @@ const DEFAULT_OPTIONS = [
     unit: '%'
   },
   {
-    name: "Hue Rotate",
-    property: "hue-rotate",
+    name: 'Hue Rotate',
+    property: 'hue-rotate',
     value: 0,
     range: {
       min: 0,
@@ -65,8 +65,8 @@ const DEFAULT_OPTIONS = [
     unit: 'deg'
   },
   {
-    name: "Blur",
-    property: "blur",
+    name: 'Blur',
+    property: 'blur',
     value: 0,
     range: {
       min: 0,
@@ -77,14 +77,14 @@ const DEFAULT_OPTIONS = [
 ]
 
 const App = () => {
-  const [options, setOptions] = useState(DEFAULT_OPTIONS)
   const [selectedOptionIndex, setSelectedOptionIndex] = useState(0)
+  const [options, setOptions] = useState(DEFAULT_OPTIONS)
   const selectedOption = options[selectedOptionIndex]
 
   const handleSliderChange = ({ target }) => {
     setOptions(pervOptions => {
       return pervOptions.map((option, index) => {
-        if (index !== selectedOptionIndex) return Option
+        if (index !== selectedOptionIndex) return option
         return { ...option, value: target.value }
       })
     })

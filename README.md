@@ -2,6 +2,12 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Hi 🥰
+
+This is a simple PhotoShop App build with React and CSS 💖
+
+you can see the app online from [here](https://photoshop12.netlify.app/)
+
 ## Available Scripts
 
 In the project directory, you can run:
